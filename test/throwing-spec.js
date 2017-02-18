@@ -28,5 +28,9 @@ describe('Throwing dart score', function() {
     scoreThrows([-1, 3, 4]).should.equal(false);
   });
 
+  it('should return false because it is not an array', function() {
+    scoreThrows('test').should.equal(false);
+  });
+
 
 });

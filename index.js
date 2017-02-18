@@ -4,6 +4,10 @@ function scoreThrows(arr){
     return elem >=0;
   }
 
+  if(arr.constructor !== Array){
+    return false;
+  }
+
   if(arr.every(isGoodNumber) === false){
     return false;
   }
