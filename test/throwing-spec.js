@@ -20,5 +20,13 @@ describe('Throwing dart score', function() {
     scoreThrows([1, 5, 11]).should.equal(15);
   });
 
+  it('should return false because it has an invalid input', function() {
+    scoreThrows([1, 'a', 11]).should.equal(false);
+  });
+
+  it('should return false because it has a negative integer', function() {
+    scoreThrows([-1, 3, 4]).should.equal(false);
+  });
+
 
 });

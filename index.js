@@ -1,4 +1,13 @@
 function scoreThrows(arr){
+
+  function isGoodNumber(elem, index){
+    return elem >=0;
+  }
+
+  if(arr.every(isGoodNumber) === false){
+    return false;
+  }
+
   let score = 0;
   let bonus = true;
   for(let i = 0; i < arr.length; i++){
